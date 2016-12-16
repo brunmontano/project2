@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contenido con HTML</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="http://www.placehold.it/100x20">
+			<ul>
+				<li><a href="main.html" target="">Main</a></li>
+				<li><a href="demos.html">Demos</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="shortcodes.html">Shortcodes</a></li>
+			</ul>
+		</nav>
+		<h1>Huge ultimate website buider kit</h1>
+	</header>
+	<section>
+		<article>
+			<img src="imagenes/cellphone.png">
+			<h2>We're a creative agency</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a href="purchase.html">Purchase</a>
+		</article>
+	</section>
+	<section>
+			<article>
+				<img src="">
+				<h3>Multi purple</h3>
+				<p>Class aptent taciti sociosqu ad litora torquent conubia nostra per inceptos himenaeos.</p>
+			</article>
+			<article>
+				<img src="">
+				<h3>Retina Ready</h3>
+				<p>Class aptent taciti sociosqu ad litora torquent conubia nostra per inceptos himenaeos.</p>
+			</article>
+			<article>
+				<img src="">
+				<h3>Modern Desing</h3>
+				<p>Class aptent taciti sociosqu ad litora torquent conubia nostra per inceptos himenaeos.</p>
+			</article>
+			<article>
+				<img src="">
+				<h3>Dailys Updates</h3>
+				<p>Class aptent taciti sociosqu ad litora torquent conubia nostra per inceptos himenaeos.</p>
+			</article>
+	</section>
+	<!--No pertenece al diseño-->
+	<section>
+		<table>
+			<tr>
+				<th>Nombre</th>
+				<th>Nota 1</th>
+				<th>Nota 2</th>
+				<th>Nota 3</th>
+			</tr>
+			<tr>
+				<td>Laura</td>
+				<td>9</td>
+				<td>6</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>Daniel</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<th>Clase 1</th>
+				<th>Mar</th>
+				<th>Jue</th>
+			</tr>
+			<tr>
+				<td>Martes</td>
+				<td>18:30</td>
+				<td>22:00</td>
+			</tr>
+			<tr>
+				<td>Jueves</td>
+				<td>18:30</td>
+				<td>22:00</td>
+			</tr>
+		</table>
+	</section>
+	<section> <!--formularios siempre es el metodo POST-->
+			   <!--enctype-->
+		<form method="POST" action="enviar.php" enctype="multipart/form-data">
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" placeholder="Completa tu nombre" required>
+			<br>
+			<label for="correo">Email:</label>
+			<input type="email" name="correo" placeholder="Ingresar email" required>
+			<br>
+			<label for="password">Contraseña:</label>
+			<input type="password" name="password" placeholder="Ingresar contraseña" required>	
+			<br>
+			<label for="provincia">Provincia:</label>
+			<select name="provincia">
+				<option value="BA">Bs As</option>
+				<option value="CBA">Cordoba</option>
+				<option value="SL">San Luis</option>
+				<option value="RN">Rio Negro</option>
+				<option value="NQ">Neuquen</option>
+			</select>
+			<br>
+			<input type="submit" value="Enviar formulario">
+			<br>
+			<!--para que me deje elegir en 2 o mas, ambos deben tener el mismo name-->
+			<input type="radio" name="entrega" value="delivery" checked>Delivery
+			<input type="radio" name="entrega" value="retira" checked>Retira por local
+			<br>
+			<input type="checkbox" name="tyc">Acepta TyC
+			<br>
+			<label for="factura">Adjuntar factura</label>
+			<input type="file" name="factura">
+			<br>
+			<video width="560" height="315" src="videos/vd1.mp4" controls></video>
+			<br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/5ANlWQy7-I0" frameborder="0" allowfullscreen></iframe>
+		</form>
+	</section>
+</body>
+</html>
